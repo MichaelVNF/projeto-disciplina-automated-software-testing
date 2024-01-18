@@ -2,11 +2,11 @@ import { NumeroConta } from "./NumeroConta";
 
 export class Conta {
 
-  private _numero: NumeroConta;
+  private _numeroConta: NumeroConta;
   private _saldo: number;
 
   public constructor(numero: string, saldo: number) {
-    this._numero = new NumeroConta(numero);
+    this._numeroConta = new NumeroConta(numero);
     this._saldo = saldo;
   }
 
@@ -27,6 +27,10 @@ export class Conta {
 
   public get saldo(): number {
     return this._saldo;
+  }
+
+  public get numero(): string {
+    return this._numeroConta.numero;
   }
 
   private validarValorMaiorQueZero(valor: number): void {
