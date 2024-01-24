@@ -4,7 +4,7 @@ export class NumeroConta {
 
     public constructor(numero: string) {
         if (!this.verificarNumeroContaComSeisDigitos(numero))
-            throw new Error("Número da conta inválido");
+            throw new Error("número da conta inválido");
 
         this._numero = numero;
     }
